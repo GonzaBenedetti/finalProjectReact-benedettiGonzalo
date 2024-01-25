@@ -1,0 +1,51 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #007BFF;
+}
+.containerLogo {
+    display: flex;
+    align-items: center;
+}
+nav img {
+    width: 150px;
+    cursor: pointer;
+    margin-right: 50px;
+}
+.containerSearch {
+    display: flex;
+    background-color: #ffffff;
+    align-items: center;
+    padding: 1px;
+}
+.containerSearch input {
+    width: 500px;
+    height: 35px;
+    padding: 10px;
+    border: none;
+    border-right: 1px solid grey;
+    outline: none;
+    font-size: 16px;
+}
+.containerSearch i {
+    padding: 0 10px;
+    cursor: pointer;
+}
+.listNav {
+    display: flex;
+}
+.listNav li {
+    list-style: none;
+    margin: 0 15px;
+    cursor: pointer;
+    padding: 3px;
+}
+.listNav li:nth-child(5) {
+    border: 1px solid #000000;
+    background-color: #4CAF50;
+}
+.listNav li i {
+    margin-right: 8px;
+}
