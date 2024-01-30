@@ -1,0 +1,51 @@
+.cardProduct {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    border: 1px solid #888888;
+    border-radius: 20px;
+    width: 250px;
+    margin: 5px;
+    padding: 15px;
+}
+.cardProduct .titleCardContainer .linkTitle{
+    color: #000000;
+    text-decoration: none;
+}
+.cardProduct .titleCardContainer .titleCard {
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+.cardProduct .titleCardContainer .titleCard:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.cardProduct picture {
+    align-self: center;
+}
+.cardProduct picture img {
+    cursor: pointer;
+    width: 150px;
+    height: 140px;
+}
+.infoProduct{
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.cardProduct footer {
+    padding: 15px 5px;
+    text-align: center;
+}
+.cardProduct footer .buttonCard {
+    background-color: #007BFF;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}

@@ -1,1 +1,60 @@
-r
+.footerMain {
+    background-color: #007BFF;
+    padding: 15px 0;
+}
+.footerMain hr {
+    background-color: #000000;
+    border: 1px solid #000000;
+}
+.containerFooter {
+    display: flex;
+    justify-content: space-evenly;
+}
+.containerLogoFooter {
+    padding: 15px;
+    text-align: center;
+}
+.containerFooter .containerLogoFooter img {
+    width: 300px;
+}
+.containerFooter ul {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.containerFooter h4 {
+    padding: 5px;
+}
+.containerFooter ul .linkFooter {
+    display: inline-block;
+    position: relative;
+    color: #000000;
+    text-decoration: none;
+    max-width:max-content ;
+    margin: 7px 2px;
+    padding: 3px;
+    list-style: none;
+    cursor: pointer;
+}
+.containerFooter ul .linkFooter::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform: scalex(0);
+    transform-origin: bottom right;
+
+    transition: transform 0.5s ease-out;
+}
+.containerFooter ul .linkFooter:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+footer .textCopy {
+    font-weight: 700;
+    padding-top: 10px;
+    text-align: center;
+}

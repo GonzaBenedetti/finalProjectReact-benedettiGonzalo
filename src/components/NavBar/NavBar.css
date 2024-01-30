@@ -16,36 +16,58 @@ nav img {
 }
 .containerSearch {
     display: flex;
-    background-color: #ffffff;
+    background-color: #f5f5f5;
     align-items: center;
-    padding: 1px;
+    padding: 3px;
 }
 .containerSearch input {
+    background-color: #f5f5f5;;
     width: 500px;
     height: 35px;
     padding: 10px;
     border: none;
-    border-right: 1px solid grey;
+    border-right: 1px solid #92929288;;
     outline: none;
     font-size: 16px;
 }
 .containerSearch i {
+    font-size: 18px;
+    color: #929292;
     padding: 0 10px;
     cursor: pointer;
 }
 .listNav {
     display: flex;
 }
-.listNav li {
+.listNav .liNav {
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    position: relative;
     list-style: none;
     margin: 0 15px;
     cursor: pointer;
     padding: 3px;
+    align-self: center;
 }
-.listNav li:nth-child(5) {
-    border: 1px solid #000000;
-    background-color: #4CAF50;
+.listNav .liNav:nth-child(n + 1):nth-child(-n + 4)::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform: scalex(0);
+    transform-origin: bottom right;
+
+    transition: transform 0.5s ease-out;
 }
-.listNav li i {
+.listNav .liNav:nth-child(n + 1):nth-child(-n + 4):hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.listNav .liNav i {
     margin-right: 8px;
+    font-size: 22px;
 }

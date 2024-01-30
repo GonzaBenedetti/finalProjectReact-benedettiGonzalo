@@ -1,24 +1,27 @@
 import logo from "../../assets/logoNav.png"
+import CartWidget from "../CartWidget/CartWidget"
+import {NavLink, Link} from "react-router-dom"
 import "./NavBar.css"
 
 const NavBar = () => {
   return (
     <nav>
         <div className="containerLogo">
-            <img src={logo} alt="logo" />
+           <Link to="/"><img src={logo} alt="logo"/></Link>
             <div className="containerSearch">
                 <label htmlFor=""></label>
                 <input type="text" placeholder="Search SmartBuyHub"/>
-                <i class='bx bx-search'></i>
+                <i className='bx bx-search'></i>
             </div>
         </div>
 
         <ul className="listNav">
-            <li>Home</li>
-            <li>Shop</li>
-            <li>About</li>
-            <li>Help</li>
-            <li><i class='bx bx-cart'></i>Your Cart</li>
+          
+            <NavLink to="/" className="liNav">Home</NavLink>
+            <NavLink to="/shop" className="liNav">Shop</NavLink>
+            <NavLink to="/about" className="liNav">About</NavLink>
+            <NavLink to="/help" className="liNav">Help</NavLink>
+            <NavLink to="/cart" className="liNav"><CartWidget/></NavLink>
         </ul>
     </nav>
   )
