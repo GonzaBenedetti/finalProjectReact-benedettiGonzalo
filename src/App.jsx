@@ -10,7 +10,6 @@ import Careers from './components/Careers/Careers'
 import Press from './components/Press/Press'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
-import Shop from './components/Shop/Shop'
 
 const App = () => {
   return (
@@ -19,9 +18,9 @@ const App = () => {
       <NavBar/>
         <Routes>
           <Route path='/' element={<Home/>}/>
-          <Route path='/shop' element={<Shop/>}/>
+          <Route path='/shop' element={<ItemListContainer/>}/>
+          <Route path='/shop/category/:idCategory' element={<ItemListContainer/>}/>
           <Route path='/shop/item/:itemId' element={<ItemDetailContainer/>}/>
-          <Route path='/shop/category/:idCategory'/>
           <Route path='/about' element={<About/>}/>
           <Route path='/help' element={<Help/>}/>
           <Route path='/the-company' element={<TheCompany/>}/>
