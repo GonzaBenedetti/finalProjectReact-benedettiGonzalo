@@ -1,7 +1,31 @@
 .asideItemListContainer {
-    width: 100%;
+    width: 300px;
+    height: 80vh;
     border: 1px solid #888888;
     border-radius: 20px;
     margin: 5px;
     padding: 15px;
+}
+.asideItemListContainer h3 {
+    text-align: center;
+}
+.asideItemListContainer hr {
+    margin: 5px 0;
+}
+.asideItemListContainer .listCatContainer{
+    padding: 10px;
+}
+.asideItemListContainer .listCatContainer .listCat {
+    list-style: none;
+    padding: 2px 0;
+    margin: 5px 0;
+}
+.asideItemListContainer .listCatContainer .listCat .linkCat {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+.asideItemListContainer .listCatContainer .listCat .linkCat:hover {
+    text-decoration: underline;
 }

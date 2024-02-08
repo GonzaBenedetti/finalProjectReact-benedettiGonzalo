@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Press = () => {
-  return (
-    <div>Press</div>
-  )
-}
+  return <div>Press</div>;
+};
 
-export default Press
+export default Press;

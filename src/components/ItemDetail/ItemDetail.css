@@ -1,6 +1,6 @@
 .itemDetail {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin: 15px;
     padding: 5px;
@@ -8,6 +8,7 @@
 }
 .itemDetail picture .imgItemDetail {
     height: 500px;
+    margin: 0 50px;
 }
 .itemDetail .containerItemDetail  {
     padding: 10px;
@@ -22,6 +23,10 @@
 }
 .itemDetail .containerItemDetail .sectionItemDetail .priceItemDetail {
     font-size: 28px;
+    margin-bottom: 15px;
+}
+.itemDetail .containerItemDetail .footerItemDetail {
+    margin: 15px 0;
 }
 .itemDetail .containerItemDetail .footerItemDetail .titleDescriptionItemDetail {
     font-size: 14px;

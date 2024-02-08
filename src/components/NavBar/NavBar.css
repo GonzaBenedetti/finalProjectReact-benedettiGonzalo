@@ -67,6 +67,30 @@ nav img {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+.listNav .activeLiNav {
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    position: relative;
+    list-style: none;
+    margin: 0 15px;
+    cursor: pointer;
+    padding: 3px;
+    align-self: center;
+}
+.listNav .activeLiNav:nth-child(n + 1):nth-child(-n + 4)::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform: scalex(1);
+    transform-origin: bottom right;
+
+    transition: transform 0.5s ease-out;
+}
 .listNav .liNav i {
     margin-right: 8px;
     font-size: 22px;

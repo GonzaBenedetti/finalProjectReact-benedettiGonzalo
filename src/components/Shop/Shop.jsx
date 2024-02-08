@@ -1,14 +1,14 @@
-import ItemListContainer from "../ItemListContainer/ItemListContainer"
-import AsideItemListContainer from "../AsideItemListContainer/AsideItemListContainer"
-import "./Shop.css"
+import AsideItemListContainer from "../AsideItemListContainer/AsideItemListContainer";
+import ItemListContainer from "../ItemListContainer/ItemListContainer";
+import "./Shop.css";
 
 const Shop = () => {
   return (
     <main className="shopContainer">
-      <AsideItemListContainer/>
-      <ItemListContainer/>
+      <AsideItemListContainer />
+      <ItemListContainer />
     </main>
-  )
-}
+  );
+};
 
-export default Shop
+export default Shop;
