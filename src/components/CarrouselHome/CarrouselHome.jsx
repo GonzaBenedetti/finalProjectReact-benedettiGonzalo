@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from "react";
-import { dataCarrousel } from "../../asyncMock";
+import { dataCarrousel } from "../../dataCarrousel";
 import "./CarrouselHome.css";
 
 const CarrouselHome = () => {

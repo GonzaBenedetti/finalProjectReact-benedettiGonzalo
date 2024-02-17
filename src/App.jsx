@@ -12,7 +12,7 @@ import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 import Cart from "./components/Cart/Cart";
 import CartProvider from "./context/CartContext";
-
+import Checkout from "./components/Checkout/Checkout";
 
 const App = () => {
   return (
@@ -36,7 +36,8 @@ const App = () => {
             <Route path="/the-company" element={<TheCompany />} />
             <Route path="/careers" element={<Careers />} />
             <Route path="/press" element={<Press />} />
-            <Route path="/cart" element={<Cart/>} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<Checkout />} />
             <Route path="*" element={<h4>404 Not Found</h4>} />
           </Routes>
           <Footer />

@@ -1,3 +1,6 @@
 .mainListContainer {
     display: flex;
 }
+.mainListContainer .loader {
+    margin: 200px auto;
+}

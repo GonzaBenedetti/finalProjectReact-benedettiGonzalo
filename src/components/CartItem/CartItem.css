@@ -1,0 +1,28 @@
+.cartContainerProduct {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 150px;
+  margin: 10px 0;
+  border: 3px solid black;
+  border-radius: 50px;
+}
+.cartContainerProduct .imageCartProduct{
+  width: 100px;
+  cursor: pointer;
+}
+.cartContainerProduct .titleCartProduct:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.cartContainerProduct .textCartProduct{
+  font-weight: 500;
+}
+.cartContainerProduct .textCartProduct span{
+  font-weight: bold;
+}
+.cartContainerProduct i{
+  cursor: pointer;
+  font-size: 23px;
+  padding: 5px 8px;
+}

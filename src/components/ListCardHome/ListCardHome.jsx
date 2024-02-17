@@ -1,12 +1,11 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { db } from "../../services/firebase/firebaseConfig";
 import ItemList from "../ItemList/ItemList";
-import AsideItemListContainer from "../AsideItemListContainer/AsideItemListContainer";
-import "./ItemListContainer.css";
 import { query, getDocs, collection, where } from "firebase/firestore";
+import "./ListCardHome.css";
 
-const ItemListContainer = () => {
+const ListCardHome = () => {
   const [products, setProducts] = useState([]);
   const [loader, setLoader] = useState(true);
   const { idCategory } = useParams();
@@ -23,24 +22,26 @@ const ItemListContainer = () => {
           const data = doc.data();
           return { id: doc.id, ...data };
         });
-        setProducts(newProducts);
+        const limitedProducts = newProducts.slice(0, 5);
+        setProducts(limitedProducts);
         setLoader(false);
       })
       .catch((err) => console.log(err));
   }, [idCategory]);
-
   return (
-    <main className="mainListContainer">
+    <section className="sectionCardProductsHome">
       {loader ? (
-        <span class="loader"></span>
+        <span className="loader"></span>
       ) : (
-        <>
-          <AsideItemListContainer />
+        <div className="containerCardProductsHome">
+          <Link to="./shop" className="seeMoreProducts button">
+            See more products
+          </Link>
           <ItemList products={products} />
-        </>
+        </div>
       )}
-    </main>
+    </section>
   );
 };
 
-export default ItemListContainer;
+export default ListCardHome;

@@ -7,7 +7,7 @@ const CartWidget = () => {
 
   return (
     <>
-      <i className="bx bx-cart">{ totalQuantity }</i>    
+      <i className="bx bx-cart">{totalQuantity}</i>
     </>
   );
 };

@@ -1,0 +1,65 @@
+.titleCheckout {
+  text-align: center;
+  padding: 15px;
+}
+
+.containerCheckout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 15px;
+}
+.containerCheckout .checkOutProduct {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: 2px solid black;
+  border-radius: 50px;
+  margin-bottom: 15px;
+  width: 400px;
+  height: 300px;
+}
+.containerCheckout .checkOutProduct picture img {
+  width: 150px;
+}
+.formCheckout {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 450px;
+}
+.formCheckout input {
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  outline: none;
+
+  transition: .25s;
+}
+.formCheckout input:focus {
+ transform: scale(1.02);
+}
+.formCheckout .containerButtonCheckout {
+  display: flex;
+  justify-content: end;
+}
+.formCheckout button{
+  margin: 5px 0 5px 15px;
+}
+.totalCheckout {
+  text-align: end;
+  font-size: 20px;
+  padding: 5px 15px;
+}
+.totalCheckout span {
+  font-weight: bold;
+}
+.orderNumberCheckout {
+  text-align: center;
+  margin: 15px 0;
+}
+.orderNumberCheckout span {
+  font-size: 20px;
+  font-weight: bold;
+}

@@ -1,0 +1,37 @@
+.sectionCart {
+  padding: 30px;
+  
+}
+.sectionCartEmpty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  margin: 5px;
+}
+.sectionCartEmpty .titleCartEmpty {
+  margin-bottom: 15px;
+  text-align: center;
+}
+.titleProdCart {
+  font-weight: 500
+  ;
+  text-align: end;
+}
+.titleProdCart span {
+  font-size: 20px;
+  font-weight: bold;
+}
+.containerEmptyButton {
+  display: flex;
+  justify-content: end;
+}
+.containerBuyButton {
+  display: flex;
+  justify-content: center;
+  
+}
+.completeBuy {
+  padding: 9px 50px;
+  font-size: 20px;
+}
